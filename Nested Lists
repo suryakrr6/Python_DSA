@@ -1,0 +1,17 @@
+if __name__ == '__main__':
+    new_list =[]
+    score_list=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        score_list.append(score)  
+        new_list.append([name,score])
+        
+        
+    lowest = min(score_list)
+    second_lowest = min([score for score in score_list if score!=lowest])
+    result = [name for name,score in new_list if score==second_lowest]   
+    result.sort() 
+    print("\n".join(result))    
+          
+        
