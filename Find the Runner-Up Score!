@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())  
+    num_list =[]
+    for i in arr:
+        if i not in num_list:
+            num_list.append(i)
+            num_list.sort()
+            a=len(num_list)-2
+    print(num_list[a])
+    
