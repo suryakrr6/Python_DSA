@@ -1,0 +1,23 @@
+if __name__ == '__main__':
+    N = int(input())
+    arr_list =[]
+    for i in range(N):
+        n=input().split()
+        if n[0] == "insert":
+            a = int(n[1])
+            b = int(n[2])
+            arr_list.insert(a,b)
+        if n[0] == "print":
+            print(arr_list)
+        if n[0] == "remove":
+            a = int(n[1])
+            arr_list.remove(a)
+        if n[0]== "append":
+            a = int(n[1])
+            arr_list.append(a)
+        if n[0]== "sort":
+            arr_list.sort()
+        if n[0] == "pop":
+            arr_list.pop() 
+        if n[0] == "reverse":
+            arr_list.reverse()
